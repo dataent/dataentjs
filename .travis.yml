@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - "8"
+
+services:
+  - mysql
+
+before_install:
+  - mysql -u root -e 'create database test_dataentjs'
+  - echo "USE mysql;\nCREATE USER 'test_dataentjs'@'localhost' IDENTIFIED BY 'test_dataentjs';\nFLUSH PRIVILEGES;\n"
+  - echo "USE mysql;\nGRANT ALL PRIVILEGES ON \`test_dataentjs\`.* TO 'test_dataentjs'@'localhost';\n"
+  - "git clone https://github.com/dataent/dataentjs && cd dataentjs"
+  - "npm install -g yarn"
+  - "yarn"
+
+script:
+  - "yarn link && yarn link dataentjs"
+  - "yarn run test"
