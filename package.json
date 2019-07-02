@@ -1,6 +1,6 @@
 {
   "name": "dataentjs",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Dataent.js",
   "main": "index.js",
   "bin": {

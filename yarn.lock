@@ -2181,11 +2181,11 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-dataent-datatable@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/dataent-datatable/-/dataent-datatable-1.1.2.tgz#d28841fa9161ef2329032376fb48758456dbc9cb"
+dataent-datatable@^1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/dataent-datatable/-/dataent-datatable-1.13.2.tgz#b32cf6a6e648ee7a76b02734cf876e892d9a4563
   dependencies:
-    clusterize.js "^0.18.0"
+    hyperlist "^1.0.0-beta"
     lodash "^4.17.5"
     sortablejs "^1.7.0"
 
